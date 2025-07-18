@@ -1,0 +1,265 @@
+/* src/pages/BookingSuccessPage.css */
+.booking-success-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 0;
+}
+
+.booking-success-page .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.loading-spinner {
+  text-align: center;
+  color: white;
+  padding: 4rem 0;
+}
+
+.loading-spinner i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.loading-spinner p {
+  font-size: 1.2rem;
+}
+
+.error-state {
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.error-icon i {
+  font-size: 4rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.error-state h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.error-state p {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.success-content {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.success-icon i {
+  font-size: 5rem;
+  color: #27ae60;
+  margin-bottom: 1.5rem;
+}
+
+.success-content h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.success-message {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.booking-details-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.booking-details-card h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item .label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.detail-item .value {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.detail-item .total-amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #27ae60;
+}
+
+.special-requests {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.special-requests h3 {
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.special-requests p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.next-steps {
+  background: #e8f5e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.next-steps h3 {
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.next-steps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.next-steps li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 2rem;
+  color: #495057;
+}
+
+.next-steps li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.navigation-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #0056b3;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.btn.outline:hover {
+  background: #007bff;
+  color: white;
+}
+
+.btn.secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: #545b62;
+}
+
+@media (max-width: 768px) {
+  .booking-success-page .container {
+    padding: 0 0.5rem;
+  }
+  
+  .success-content {
+    padding: 2rem 1rem;
+  }
+  
+  .success-content h1 {
+    font-size: 2rem;
+  }
+  
+  .booking-details-card {
+    padding: 1.5rem;
+  }
+  
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .action-buttons,
+  .navigation-links {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

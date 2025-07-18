@@ -1,0 +1,140 @@
+/* Featured Destination Card */
+.featured-destination-card {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: white;
+  margin: 15px;
+}
+
+.featured-destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.destination-image {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+
+.destination-tag {
+  background: #ffd700;
+  color: #005e2d;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 0 0 20px 20px;
+  display: inline-block;
+}
+
+.destination-info {
+  padding: 20px;
+}
+
+.destination-info h3 {
+  color: #005e2d;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.location i {
+  margin-right: 8px;
+  color: #ff6b6b;
+}
+
+.description {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.destination-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.btn.outline {
+  background: transparent;
+  color: #005e2d;
+  border: 2px solid #005e2d;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.btn.outline:hover {
+  background: #005e2d;
+  color: white;
+}
+
+.btn.outline i {
+  margin-left: 8px;
+  font-size: 0.8rem;
+}
+
+.rating {
+  color: #005e2d;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.rating i {
+  color: #ffd700;
+  margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-destination-card {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+  
+  .destination-image {
+    height: 200px;
+  }
+}
+
+/* Animation for card entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.featured-destination-card {
+  animation: fadeInUp 0.5s ease forwards;
+}

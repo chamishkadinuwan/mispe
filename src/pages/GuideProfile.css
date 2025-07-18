@@ -1,0 +1,274 @@
+/* src/pages/GuideProfile.css */
+.guide-profile .profile-header {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 60px 0 40px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.guide-avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 4px solid rgba(255,255,255,0.2);
+}
+
+.header-info h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.specialty {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.section {
+  margin-bottom: 40px;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+}
+
+.specialties {
+  list-style: none;
+}
+
+.specialties li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.specialties li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.specialties i {
+  font-size: 1.8rem;
+  color: var(--primary);
+  min-width: 40px;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.language-tag {
+  background-color: var(--light);
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.destinations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.destination-tag {
+  background-color: var(--light);
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--dark);
+  transition: all 0.3s ease;
+}
+
+.destination-tag:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.reviews {
+  margin-top: 30px;
+}
+
+.review {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.reviewer {
+  font-weight: 600;
+}
+
+.review-date {
+  color: var(--gray);
+}
+
+.review-rating {
+  color: var(--secondary);
+}
+
+.booking-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.booking-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--gray);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.price-summary {
+  margin: 25px 0;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price-item:last-child {
+  margin-bottom: 0;
+}
+
+.total-price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.booking-note {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.booking-note i {
+  color: var(--primary);
+}
+
+.contact-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+}
+
+.contact-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--primary-dark);
+}
+
+.contact-box p {
+  margin-bottom: 20px;
+  color: var(--gray);
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
